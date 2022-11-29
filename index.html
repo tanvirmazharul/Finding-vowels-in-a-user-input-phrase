@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=xZ6EvvpX3ivXhWkR4I3BJCHXuAdADqwwB99ABQovAwuTjz3V6KNiEpFGBYaGTx_8sc6pBIPrJszRiPQnAvn0F_CpwYaOKiyAhAiEeFIqcr15ypRhrABQ84MUpCv_mA0J9QJ_r-iDuIsYFAIy-xKu9HptgZdPF3-H-cs5nqGWTeHOUSIwMf97RuEdSsECm-eubzPhm_IHOrjyebwzapLnjNmQyYRbvbW-ZBmNVm0yADPQKr65CP2I531bRDm69vjsX4QAPQ9VIsXPICIZJ3RVlCuxS6IBS-rXCH39QHjF-9L1ufpmMWmmfNd-QZYOKRfO9RiFEXhbO4q7MYzuVb0dDXr_jutVmo2nFFgsx17KYWrDn8kPNzhE9oRkzjYAM7y_QWfmHzRw_rkRP74KadgPoEaToz10bAznc0gt22ff-n5OC58eLvI62wqI-M0kK2lzTRtkK6wgwyBVITOC3Wk8vsw_j15WqfSeg8FY4TkJhffAe66CsywnKMxslCASqJY9hNiDKBu8jUUVECLCrNanzFL2xACapjopTubWIC-ZizG3TU7WebxMS-MqFrcoc_x9RdSTY3IdyCjyfjtDI-OAfw0EgkmPxxGK6nQMyk-0Wk0q0SSSsf9dwaYqrY99E95KsYw3dO60EqZzGyFxRlx11IX2u05khCwkteMIf9ROsMmFkttolkYUikRsFitOIhViRS3XlTMHurwGRC_OaKEZIgP7VZGjSZrEghOUI_GDR1NgouIJfnIQtEo7f46gAKgfgCIBftr2OordRkZjCT0XZkIsYF9HLR_45PDpdnqis1nABLLDaivLZN0CNcT7bU1Ykgi64LYRP2Po2toTvahk9_itGoNNlIpnZHZht1tS_Of4JBi9uNXLM_3bFxgZpFPEpdFSY4L_D8lGgT4dU0J3UlOyOQvtU_Vr-3tHaU7Eaq04lJrMCZDGcE4RI_awYs_SaRXYjrEdsNe856CK3iDSc7wkGVfgS0Dh0VnjOBi5ANA77i0eYdynHCoPR8izotGj_aF3zFz29i59glMKjULJ5AD2rA6p0BUc6hF9PynX6zwXioNa0dbEIpWy2IzuMnkz6EQz2zf__KzJoBVsYRzRpAcYqGa47fYti8obqSfXHUf_NDXAIkyDMVZP1Lik2xk0URmy_Ilo_9tz39MvmvwbPIxYIWskcDll1FfaZaNHA7fE7LBuNVM9YCLmePDImrkqmGRNqyWpXMbaphZba4HoMVchTK5FZCJVySWonIswOGvMOmdsRqpM8zJ0hkc3ow2tSnSSMcELlncu4VZBEr_B858qb1ImoFWpW8hXpTweK7h4zuwR_-yO2ONcw8DN3FneP-RYDwGEM1gJscYNeS-RqXfnbVUFteFR9CXo5SpSZ_Nhsvcf_UWHNHEoyW61pTGd7_LImirEMt4e6Y6o_hGt4WItL5DyTzh87ljQLuDM2UghSHSSj2hzida1ci1eFlYvyP4hZm81GYWKMk35zzjvYFBV-gbwogBIxThHg4eaQve9EjT1kBCYMLGCtbRihySE2XceuIN6r4X-_xgHQjzNle50DBHVMB8XngTF3_3MZKQ" nonce="60f877e27a977014e10faf21c4367f32" charset="UTF-8"></script><label for="word">Input word:</label><br>
+    <input type="text" id="word" name="word" placeholder="hello">
+    <input type="button" value="ok" onclick="print_n_time()">
+    <p id="results"></p>
+
+
+    <script>
+        function print_n_time(){
+            var string =document.getElementById("word").value;
+            const vowels  = ["a","e","i","o","u","y","å","ä","ö","A","E","I","O","U","Y","Ä","Ö","Ä","Å"];
+            var count=0;
+            
+            for (var charset in string){
+                for (var char in vowels){
+                    if (string[charset]==vowels[char]){
+                        count=count+1;
+
+                }
+
+                 }
+
+            }
+            
+            document.getElementById("results").innerHTML=(string+" contains "+count+" vowels.")
+
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
